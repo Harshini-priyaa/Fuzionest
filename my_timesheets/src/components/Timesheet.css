@@ -1,0 +1,50 @@
+.timesheet {
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    border-bottom: 1px solid #ddd;
+  }
+  
+  .timesheet-status {
+    flex: 0 0 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .timesheet-image {
+    flex: 0 0 50px;
+    margin-right: 15px;
+  }
+  
+  .timesheet-image img {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+  }
+  
+  .timesheet-details {
+    flex: 2;
+  }
+  
+  .timesheet-title {
+    font-family: "Poppins", sans-serif;
+    font-weight: 700;
+  }
+  
+  .timesheet-column {
+    flex: 1;
+    text-align: center;
+  }
+  
+  .timesheet-column div {
+    margin-bottom: 5px;
+    color: #666;
+    font-size: 12px;
+  }
+  
+  .timesheet-column div:first-child {
+    font-size: 14px;
+    color: #000;
+  }
+  
