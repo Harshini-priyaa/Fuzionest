@@ -5,7 +5,7 @@ const Timesheet = ({ image, title, dateRange, submittedHours, approvedHours }) =
   return (
     <div className="timesheet">
       <div className="timesheet-status">
-        <span className="status-icon">✔️</span>
+        <span className="status-icon">✅</span>
       </div>
       <div className="timesheet-image">
         <img src={image} alt="User" />
