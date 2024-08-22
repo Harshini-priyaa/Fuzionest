@@ -1,5 +1,6 @@
 import React from 'react';
 import './Timesheet.css';
+import tickMark from './tick-mark.png'; // Import the image properly
 
 const formatDate = (date) => {
   const options = { day: '2-digit', month: 'short', year: 'numeric' };
@@ -18,7 +19,9 @@ const Timesheet = ({ image, title, dateRange, submittedHours, approvedHours, cou
       </div>
       <div className="timesheet">
         <div className="timesheet-status">
-          <span className="status-icon">✅</span>
+          <span className="status-icon">
+            <img src={tickMark} alt='tick-mark' /> {/* Use the imported image */}
+          </span>
         </div>
         <div className="timesheet-image">
           <img src={image} alt="User" />

@@ -1,6 +1,6 @@
 .timesheet-wrapper {
   position: relative;
-  padding: 10px;
+  padding: 5px; /* Reduced padding */
   border-bottom: 1px solid #ddd;
 }
 
@@ -18,46 +18,55 @@
 .timesheet {
   display: flex;
   align-items: center;
-  padding-top: 25px; /* Add padding to make space for the count */
+  padding-top: 15px; /* Reduced padding */
 }
 
 .timesheet-status {
-  flex: 0 0 40px;
   display: flex;
-  justify-content: center;
   align-items: center;
-  border-radius: 50%;
+  justify-content: center;
+  width: 47px; /* Adjusted size */
+  height: 47px; /* Adjusted size */
+  margin-right: 15px; /* Increased margin to create more space */
+}
+
+.status-icon img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
 }
 
 .timesheet-image {
-  flex: 0 0 50px;
-  margin-right: 15px;
+  flex: 0 0 40px; /* Adjusted size */
+  margin-right: 10px; /* Reduced margin */
 }
 
 .timesheet-image img {
-  width: 50px;
-  height: 50px;
+  width: 40px; /* Adjusted size */
+  height: 40px; /* Adjusted size */
   border-radius: 50%;
 }
 
 .timesheet-title {
   font-family: "Poppins", sans-serif;
   font-weight: 700;
+  margin-bottom: 5px; /* Space below the title */
+  padding-bottom: 5px; /* Adjusted spacing */
 }
+
 .timesheet-details {
-  flex: 0.8; /* Reduced from 2 to 1.5 */
-  margin-right: 10px; /* Optional: You can adjust this value as needed */
+  flex: 1.2; /* Adjusted flex to accommodate spacing */
+  margin-right: 10px;
 }
 
 .timesheet-column {
   flex: 1;
   text-align: center;
-  margin-left: 10px; /* Optional: You can adjust this value to fine-tune the spacing */
+  margin-left: 5px; /* Reduced margin */
 }
 
-
 .timesheet-column div {
-  margin-bottom: 5px;
+  margin-bottom: 3px; /* Reduced space between lines */
   color: #666;
   font-size: 12px;
 }
